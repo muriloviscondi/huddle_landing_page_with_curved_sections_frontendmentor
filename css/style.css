@@ -35,7 +35,7 @@ p {
   margin: 20px auto;
 }
 
-.content-button input[type=button] {
+input[type=button] {
   width: 350px;
   height: 75px;
   color: #fff;
@@ -49,11 +49,11 @@ p {
   cursor: pointer;
 }
 
-.content-button input[type=button]:hover {
+input[type=button]:hover {
   opacity: 0.90;
 }
 
-.content-button input[type=button]:focus {
+input[type=button]:focus {
   outline-style: none;
 }
 
@@ -199,11 +199,73 @@ nav #try_it:hover {
   text-align: center;
 }
 
+/*=== FOOTER ===*/
+
 .footer-content {
   width: 100%;
+  padding: 50px;
+  color: #fff;
   background: var(--very-dark-cyan-color);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.footer__logo img {
+footer .bg-image-content.top {
+  top: 6px;
+}
+
+.footer-content p {
+  max-width: 375px;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footer__icons-contact {
+  margin-bottom: 20px;
+}
+
+.footer__icons-contact i {
+  margin-right: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.media_socials {
+  margin-top: 75px;
+}
+
+.media_socials a + a {
+  margin-left: 20px;
+}
+
+.media_socials a img {
+  width: 40px;
+}
+
+.footer__newsletter h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer__input {
+  display: inline-block;
+}
+
+.footer__input input[type=email] {
+  width: 300px;
+  height: 40px;
+  margin: auto 20px 20px auto;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 5px;
+}
+
+.footer__input input[type=button] {
   width: 200px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 5px;
 }
