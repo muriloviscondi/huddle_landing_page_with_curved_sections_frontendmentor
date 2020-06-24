@@ -50,7 +50,7 @@ input[type=button] {
 }
 
 input[type=button]:hover {
-  opacity: 0.90;
+  opacity: 0.8;
 }
 
 input[type=button]:focus {
@@ -86,7 +86,7 @@ nav .enter:hover {
 }
 
 nav #try_it {
-  padding: 0px 20px;
+  padding: 3px 20px;
   font-size: 16px;
   line-height: 26px;
   color: var(--pink-color);
