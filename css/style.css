@@ -57,10 +57,6 @@ p {
   outline-style: none;
 }
 
-img {
-  width: 100%;
-}
-
 .flex_content {
   display: flex;
   flex-direction: row;
@@ -91,8 +87,8 @@ nav .enter:hover {
 
 nav #try_it {
   padding: 0px 20px;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   color: var(--pink-color);
   text-decoration: none;
 }
@@ -103,8 +99,8 @@ nav #try_it:hover {
 
 /*=== SECTION 01 ===*/
 #build_community {
-  width: 100%;
-  margin-top: 100px;
+  max-width: 1052px;
+  margin: 100px auto auto;
   text-align: center;
 }
 
@@ -117,17 +113,13 @@ nav #try_it:hover {
   padding: 50px 0px;
 }
 
-#build_community .content-mockup img {
-  width: auto;
-}
-
 .community_description {
   margin: 20px auto;
   text-align: left;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .community i {
@@ -157,8 +149,13 @@ nav #try_it:hover {
 }
 
 #content_community h1 {
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+#content_community p {
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .bg-image-content {
@@ -166,7 +163,7 @@ nav #try_it:hover {
 }
 
 .bg-image-content.top {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   top: 5px;
 }
@@ -176,6 +173,7 @@ nav #try_it:hover {
 }
 
 .flex_content.bg-gray {
+  padding: 0px 50px;
   background-color: var(--very-pale-blue-color);
 }
 
@@ -186,19 +184,14 @@ nav #try_it:hover {
 
 #content_community .community_content {
   max-width: 500px;
-  position: relative;
-}
-
-#content_community .community_content.left {
-  left: 100px;
-}
-
-#content_community .community_content.right {
-  right: 100px;
 }
 
 #content_community .community_content-img {
   max-width: 800px;
+}
+
+#content_community .community_content-img img {
+  width: 600px;
 }
 
 /*=== READY ===*/
@@ -208,6 +201,9 @@ nav #try_it:hover {
 
 .footer-content {
   width: 100%;
-  height: 500px;
   background: var(--very-dark-cyan-color);
+}
+
+.footer__logo img {
+  width: 200px;
 }
