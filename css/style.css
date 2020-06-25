@@ -127,7 +127,7 @@ nav #try_it:hover {
   text-align: left;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -186,6 +186,10 @@ nav #try_it:hover {
   background-color: var(--very-pale-blue-color);
 }
 
+.flex_content.bg-img {
+  padding: 0px 50px;
+}
+
 #content_community .community_content,
 #content_community .community_content-img {
   margin: 0 auto;
@@ -224,8 +228,11 @@ nav #try_it:hover {
   color: #fff;
   background: var(--very-dark-cyan-color);
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .footer-content p {
@@ -284,7 +291,99 @@ nav #try_it:hover {
 }
 
 @media only screen and (max-width: 850px) {
-  .flex_content {
+  nav #logo {
+    width: 125px;
+  }
 
+  #build_community {
+    padding: 0 30px;
+  }
+
+  h1 {
+    font-size: 23px;
+    line-height: 33px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .content-button input[type=button] {
+    width: 250px;
+    height: 50px;
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .community_description {
+    margin: 20px auto 50px auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .community + .community {
+    margin-top: 50px;
+  }
+
+  .community i img {
+    position: relative;
+    left: -65px;
+  }
+
+  .flex_content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .flex_content.bg-gray {
+    padding: 0px 30px;
+  }
+  
+  .flex_content.bg-img {
+    padding: 0px 30px;
+  }
+
+  #content_community .community_content-img img {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  #content_community h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #content_community p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+  
+  .bg-image-content {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  #ready .content-button {
+    margin: 20px auto 100px;
+  }
+
+  .footer-content {
+    padding: 50px 30px;
+  }
+
+  .footer__newsletter {
+    margin: 0px auto 100px;
+  }
+
+  .footer__input {
+    text-align: right;
+  }
+
+  .footer__input input[type=email] {
+    width: 100%;
+    margin: 0 0 20px;
   }
 }
