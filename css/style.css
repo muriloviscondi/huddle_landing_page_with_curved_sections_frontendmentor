@@ -60,7 +60,12 @@ input[type=button]:focus {
 .flex_content {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+}
+
+.flex_content.reverse {
+  flex-direction: row-reverse;
 }
 
 /*=== NAVBAR ===*/
@@ -111,6 +116,10 @@ nav #try_it:hover {
 
 #build_community .content-mockup {
   padding: 50px 0px;
+}
+
+#build_community .content-mockup img {
+  width: 100%;
 }
 
 .community_description {
@@ -165,7 +174,7 @@ nav #try_it:hover {
 .bg-image-content.top {
   margin-top: 50px;
   position: relative;
-  top: 5px;
+  top: 6px;
 }
 
 .bg-image-content.bottom {
@@ -190,8 +199,16 @@ nav #try_it:hover {
   max-width: 800px;
 }
 
+#content_community .community_content-img.right {
+  text-align: right;
+}
+
+#content_community .community_content-img.left {
+  text-align: left;
+}
+
 #content_community .community_content-img img {
-  width: 600px;
+  width: 80%;
 }
 
 /*=== READY ===*/
@@ -209,10 +226,6 @@ nav #try_it:hover {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-footer .bg-image-content.top {
-  top: 6px;
 }
 
 .footer-content p {
@@ -268,4 +281,10 @@ footer .bg-image-content.top {
   font-size: 16px;
   line-height: 26px;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .flex_content {
+
+  }
 }
